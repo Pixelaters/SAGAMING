@@ -88,8 +88,8 @@ a.filled-button:hover {
 	margin-bottom: 15px;
 }
 
-.products-heading {
-	background-image: url(../images/products-heading.jpg);
+.PromotedGames-heading {
+	background-image: url(../images/PromotedGames-heading.jpg);
 }
 
 .about-heading {
@@ -403,11 +403,11 @@ header .navbar {
 
 /* Latest Produtcs */
 
-.latest-products {
+.latest-PromotedGames {
 	margin-top: 100px;
 }
 
-.latest-products .section-heading a {
+.latest-PromotedGames .section-heading a {
 	float: right;
 	margin-top: -35px;
 	text-transform: uppercase;
@@ -609,18 +609,18 @@ footer .inner-content p a {
 
 /* Product Page */
 
-.products {
+.PromotedGames {
 	margin-top: 100px;
 }
 
-.products .filters {
+.PromotedGames .filters {
 	text-align: center;
 	border-bottom: 1px solid #eee;
 	padding-bottom: 10px;
 	margin-bottom: 60px;
 }
 
-.products .filters li {
+.PromotedGames .filters li {
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: 700;
@@ -631,22 +631,22 @@ footer .inner-content p a {
 	cursor: pointer;
 }
 
-.products .filters ul li.active,
-.products .filters ul li:hover {
+.PromotedGames .filters ul li.active,
+.PromotedGames .filters ul li:hover {
   color: #f33f3f;
 }
 
-.products ul.pages {
+.PromotedGames ul.pages {
 	margin-top: 30px;
 	text-align: center;
 }
 
-.products ul.pages li {
+.PromotedGames ul.pages li {
 	display: inline-block;
 	margin: 0px 2px;
 }
 
-.products ul.pages li a {
+.PromotedGames ul.pages li a {
 	width: 44px;
 	height: 44px;
 	display: inline-block;
@@ -658,8 +658,8 @@ footer .inner-content p a {
 	transition: all .3s;
 }
 
-.products ul.pages li a:hover,
-.products ul.pages li.active a {
+.PromotedGames ul.pages li a:hover,
+.PromotedGames ul.pages li.active a {
 	background-color: #f33f3f;
 	border-color: #f33f3f;
 	color: #fff;
@@ -954,7 +954,7 @@ footer .inner-content p a {
 		font-size: 36px;
 		letter-spacing: 0.5px;
 	}
-	.latest-products .section-heading a {
+	.latest-PromotedGames .section-heading a {
 		float: none;
 		margin-top: 0px;
 		display: block;
