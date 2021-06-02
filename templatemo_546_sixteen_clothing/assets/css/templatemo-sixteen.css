@@ -117,7 +117,7 @@ a.filled-button:hover {
 }
 
 .page-heading .text-content h2 {
-	color: #fff;
+	color:#f33f3f;
 	font-size: 62px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -427,7 +427,9 @@ header .navbar {
 }
 
 .product-item img {
-	width: 100%;
+	width: 600px;
+	height: 550px;
+
 	overflow: hidden;
 }
 
@@ -436,6 +438,8 @@ header .navbar {
 	color: #1a6692;
 	margin-bottom: 20px;
 }
+/*new added css code */
+
 
 .product-item .down-content h6 {
 	position: absolute;
