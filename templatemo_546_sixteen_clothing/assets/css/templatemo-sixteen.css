@@ -335,7 +335,7 @@ header .navbar {
 }
 
 
-/* Banner Style */
+/* Banner Style */ /* Home page banner */
 
 .banner {
     position: relative;
@@ -344,31 +344,45 @@ header .navbar {
 }
 
 .banner-item-01 {
-    padding: 300px 0px;
-    background-image: url(../images/slide_01.jpg);
+    padding: 320px 0px;
+    background-image: url(../images/warzone.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .banner-item-02 {
-    padding: 300px 0px;
-    background-image: url(../images/slide_02.jpg);
+    padding: 320px 0px;
+    background-image: url(../images/apex\ legends.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .banner-item-03 {
-    padding: 300px 0px;
-    background-image: url(../images/slide_03.jpg);
+    padding: 320px 0px;
+    background-image: url(../images/Gta\ v.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.banner-item-04 {
+    padding: 320px 0px;
+    background-image: url(../images/minecraft.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.banner-item-05 {
+    padding: 320px 0px;
+    background-image: url(../images/Fortnite.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .banner .banner-item {
-    max-height: 600px;
+    max-height: 500px;
 }
 
 .banner .text-content {
@@ -395,7 +409,7 @@ header .navbar {
 }
 
 .owl-banner .owl-dots .owl-dot {
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .owl-banner .owl-dots {
@@ -413,8 +427,8 @@ header .navbar {
 }
 
 .owl-banner .owl-dots .owl-dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     margin: 0 10px;
     background-color: #fff;
@@ -430,6 +444,7 @@ header .navbar {
     opacity: 1;
 }
 
+/*End of Banner */
 
 /* Latest Produtcs */
 
