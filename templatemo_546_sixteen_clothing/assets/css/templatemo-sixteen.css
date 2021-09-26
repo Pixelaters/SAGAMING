@@ -101,6 +101,10 @@ a.filled-button:hover {
     background-image: url(../images/PromotedGames-heading.jpg);
 }
 
+.StarterKit-heading {
+    background-image: url(../images/StarterKit-heading.jpg);
+}
+
 .about-heading {
     background-image: url(../images/about-heading.jpg);
 }
