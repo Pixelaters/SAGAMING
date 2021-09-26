@@ -3,11 +3,12 @@ div.form
 {
     display: block;
     text-align: center;
+    padding: 16px;
 }
 form
 {
     display: inline-block;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -19,3 +20,24 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  .loginbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .loginbtn:hover {
+    opacity:1;
+  }

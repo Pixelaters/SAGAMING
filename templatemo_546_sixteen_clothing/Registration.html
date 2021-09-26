@@ -5,7 +5,10 @@
     <link rel="stylesheet" href="../templatemo_546_sixteen_clothing/assets/css/form.css">
 </head>
 
-<body>
+
+  
+
+<body background="../templatemo_546_sixteen_clothing/assets/images/background-2.png">
     <div class="form">
         <form action="registration.php" method="post">
 
@@ -17,14 +20,20 @@
             <p><input type="password" name="password" placeholder="Password"></p>
 
             <p><input type="password" name="confirm password" placeholder=" Confirm password"></p>
-
-            <p><input type="date" name="date of birth" placeholder="DOB"> <label for="date of birth">DOB</label></p>
     
-            <p><input type="radio" name="male" value="male"> Male</p>
-            <p><input type="radio" name="female" value="female"> Female</p>
+            <label class="rad-label">
+                <input type="radio" class="rad-input" name="rad">
+                <div class="rad-design"></div>
+                <div class="rad-text">Male</div>
+              </label>
+            
+              <label class="rad-label">
+                <input type="radio" class="rad-input" name="rad">
+                <div class="rad-design"></div>
+                <div class="rad-text">Female</div>
+              </label>
 
-            <p><input type="submit" name="register" value="Register"></p>
-
+            <button type="submit" class="registerbtn">Register</button>
         </form>
     </div>
 </body>

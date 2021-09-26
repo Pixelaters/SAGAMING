@@ -7,11 +7,43 @@ div.form
 form
 {
     display: inline-block;
-    margin-top: 10%;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
 }
+input[type=text]{
+    width: 100%;
+    padding: 20px;
+    margin: 4px 0 4px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=password]{
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0 4px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0 4px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=date]{
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0 4px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -19,3 +51,87 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 120%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+  .rad-label {
+    display: flex;
+    align-items: center;
+  
+    border-radius: 100px;
+    padding: 14px 16px;
+    margin: 10px 0;
+  
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .rad-label:hover,
+  .rad-label:focus-within {
+    background: hsla(0, 0%, 80%, .14);
+  }
+  
+  .rad-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .rad-design {
+    width: 18px;
+    height: 18px;
+    border-radius: 30px;
+  
+    background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
+    position: relative;
+  }
+  
+  .rad-design::before {
+    content: '';
+  
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+  
+    background: hsl(0, 0%, 90%);
+    transform: scale(1.1);
+    transition: .3s;
+  }
+  
+  .rad-input:checked+.rad-design::before {
+    transform: scale(0);
+  }
+  
+  .rad-text {
+    color: hsl(0, 0%, 60%);
+    margin-left: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+  
+    transition: .3s;
+  }
+  
+  .rad-input:checked~.rad-text {
+    color: hsl(0, 0%, 40%);
+  }
+  .form-link{
+      color:aqua
+  }
