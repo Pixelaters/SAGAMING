@@ -1,3 +1,11 @@
+<?php
+session_start();
+include("connection.php");
+include("functions.php");
+
+$user_data = check_login($con);
+$accessLvl = $user_data['user_level'] ?? '';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,7 +52,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <header class="">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="home.html">
+                <a class="navbar-brand" href="home.php">
                     <h2>SA <em>Gaming</em></h2>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,25 +61,30 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html">Home
+                            <a class="nav-link" href="home.php">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="PromotedGames.html">Our Promoted Games</a>
+                            <a class="nav-link" href="PromotedGames.php">Our Promoted Games</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="StarterKit.html">Starter Kits</a>
+                            <a class="nav-link" href="StarterKit.php">Starter Kits</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Calandar.html">Calandar</a>
+                            <a class="nav-link" href="Calandar.php">Calandar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
+                            <a class="nav-link" href="contact.php">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link" href="about.php">About Us</a>
                         </li>
+                        <?php if ($accessLvl == 1) : ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Admin.php">Admin</a>
+                            </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>
