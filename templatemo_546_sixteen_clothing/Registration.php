@@ -1,3 +1,29 @@
+<?php
+session_start();
+include("connection.php");
+include("functions.php");
+
+if($_SERVER['REQUEST_METHOD']== "POST"){
+    //something was posted
+    $user_name= $_POST['user_name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    if(!empty($user_name) && !empty($password) && !is_numeric($user_name)){
+
+        //save to db
+        $user_id = random_nu(20);
+    $query = "insert into saGaming (user_id,user_name,email, password) values ('$user_id','$user_name', '$email', '$password')";
+
+    mysqli_query($con, $query);
+    header("Location: SignIn.php");
+    die;
+    }else{
+        echo "Please enter some valid information";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +33,10 @@
     <title>Sign Up Form</title>
 
     <!-- Font Icon -->
-    <link rel="stylesheet" href="../templatemo_546_sixteen_clothing/assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="./assets/fonts/material-icon/css/material-design-iconic-font.min.css">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="../templatemo_546_sixteen_clothing/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
@@ -25,7 +51,7 @@
                         <form method="POST" class="register-form" id="register-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                                <input type="text" name="user_name" id="user_name" placeholder="user_name"/>
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
@@ -33,7 +59,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="Password"/>
+                                <input type="password" name="password" id="pass" placeholder="Password"/>
                             </div>
                             <div class="form-group">
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
@@ -49,14 +75,14 @@
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="../templatemo_546_sixteen_clothing/assets/images/SA-GAMING-LOGO.JPG" alt="sing up image"></figure>
-                        <a href="../templatemo_546_sixteen_clothing/SignIn.html" class="signup-image-link">I am already member</a>
+                        <figure><img src="./assets/images/SA-GAMING-LOGO.JPG" alt="sign up image"></figure>
+                        <a href="SignIn.php" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
             </div>
         </section>
     </body>
     <!-- JS -->
-<script src="../templatemo_546_sixteen_clothing/vendor/jquery-2/jquery.min.js"></script>
-<script src="../templatemo_546_sixteen_clothing/assets/js/"></script>
+<script src="./vendor/jquery-2/jquery.min.js"></script>
+<script src="./assets/js/"></script>
 </html>
