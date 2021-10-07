@@ -137,7 +137,49 @@ Calander: Khanyisele
                 <div class="col-md-12">
                     <div class="section-heading">
                         <h2>Latest PromotedGames</h2>
+                        <?php
+
+
+$sql = "SELECT * FROM sagaming;";
+echo '<table border="1" cellspacing="3"  cellpadding="2"> 
+<tr> 
+<td> <font face="Arial">User ID</font> </td> 
+<td> <font face="Arial">User Name</font> </td> 
+<td> <font face="Arial">User Email</font> </td> 
+<td> <font face="Arial">User Password</font> </td> 
+<td> <font face="Arial">User Date</font> </td> 
+<td> <font face="Arial">User LEVEL</font> </td> 
+</tr>';
+
+$result = mysqli_query($con, $sql);
+$resultCheck = mysqli_num_rows($result);
+if ($resultCheck > 0) {
+
+
+    while ($row = mysqli_fetch_assoc($result)) {
+
+
+
+        $fieldname1 = $row['user_id'];
+        $fieldname2 = $row['user_name'];
+        $fieldname3 = $row['email'];
+        $fieldname4 = $row['password'];
+        $fieldname5 = $row['date'];
+        $fieldname6 = $row['user_level'];
+
+        echo '<tr> 
+      <td>' . $fieldname1 . '</td> 
+      <td>' . $fieldname2 . '</td> 
+      <td>' . $fieldname3 . '</td> 
+      <td>' . $fieldname4 . '</td> 
+      <td>' . $fieldname5 . '</td> 
+      <td>' . $fieldname6 . '</td> 
+  </tr>';
+    }
+}
+?>
                         <a href="PromotedGames.php">view all PromotedGames <i class="fa fa-angle-right"></i></a>
+                       
                     </div>
                 </div>
                 <div class="best-features">

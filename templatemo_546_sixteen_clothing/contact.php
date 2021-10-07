@@ -15,8 +15,7 @@ $accessLvl = $user_data['user_level'] ?? '';
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <title>SA GAMING - Contact Page</title>
 
@@ -34,8 +33,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-        integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 
 </head>
 
@@ -58,8 +56,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <a class="navbar-brand" href="home.php">
                     <h2>SA <em>GAMING</em></h2>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -85,9 +82,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                             <a class="nav-link" href="about.php">About Us</a>
                         </li>
                         <?php if ($accessLvl == 1) : ?>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Admin.php">Admin</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Admin.php">Admin</a>
+                            </li>
                         <?php endif; ?>
                     </ul>
                 </div>
@@ -126,9 +123,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 	4. Copy only URL and paste it within the src="" field below
 -->
                     <div id="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13241.342577696098!2d18.42308777849693!3d-33.93249438528741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d817e89d83d%3A0x1959fc913fdb568a!2sZonnebloem%2C%20Cape%20Town%2C%207925!5e0!3m2!1sen!2sza!4v1622130306194!5m2!1sen!2sza"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13241.342577696098!2d18.42308777849693!3d-33.93249438528741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d817e89d83d%3A0x1959fc913fdb568a!2sZonnebloem%2C%20Cape%20Town%2C%207925!5e0!3m2!1sen!2sza!4v1622130306194!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -139,9 +134,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                             are all in that missing to stand out.</p>
                         <ul class="social-icons">
                             <li><a href="https://web.facebook.com/?_rdc=3&_rdr"><i class="fa fa-facebook"></i></a></li>
-                            <li><a
-                                    href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
-                                        class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="https://za.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
                             <li><a href="https://discord.com"><i class="fa fa-discord-alt" aria-hidden="true"></i></a>
                             </li>
@@ -167,34 +160,29 @@ https://templatemo.com/tm-546-sixteen-clothing
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <fieldset>
-                                        <input name="name" type="text" class="form-control" id="name"
-                                            placeholder="Full Name" required="">
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <fieldset>
-                                        <input name="email" type="text" class="form-control" id="email"
-                                            placeholder="E-Mail Address" required="">
+                                        <input name="email" type="text" class="form-control" id="email" placeholder="E-Mail Address" required="">
                                     </fieldset>
 
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <fieldset>
-                                        <input phone="phone" type="tel" class="form-control" id="phone"
-                                            placeholder="Phone" required="">
+                                        <input phone="phone" type="tel" class="form-control" id="phone" placeholder="Phone" required="">
                                     </fieldset>
 
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <fieldset>
-                                        <input name="subject" type="text" class="form-control" id="subject"
-                                            placeholder="Subject" required="">
+                                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
                                     <fieldset>
-                                        <textarea name="message" rows="6" class="form-control" id="message"
-                                            placeholder="Your Message" required=""></textarea>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
@@ -240,30 +228,40 @@ https://templatemo.com/tm-546-sixteen-clothing
                 </div>
                 <div class="col-md-12">
                     <div class="owl-clients owl-carousel">
-                        <div class="client-item">
-                            <img src="assets/images/minecraft.jpg" alt="1">
-                        </div>
+                        <a href="https://www.minecraft.net/en-us">
+                            <div class="client-item">
+                                <img src="assets/images/minecraft.jpg" alt="1">
+                            </div>
+                        </a>
+                        <a href="https://www.leagueoflegends.com/en-gb/">
+                            <div class="client-item">
 
-                        <div class="client-item">
+                                <img src="assets/images/league-of-legends.jpg" alt="2">
 
-                            <img src="assets/images/league-of-legends.jpg" alt="2">
-                        </div>
+                            </div>
+                        </a>
 
-                        <div class="client-item">
-                            <img src="assets/images/Gta v.jpg" alt="3">
-                        </div>
+                        <a href="https://www.rockstargames.com/V/restricted-content/agegate/form?redirect=https%3A%2F%2Fwww.rockstargames.com%2FV%2F&options=&locale=en_us">
+                            <div class="client-item">
+                                <img src="assets/images/Gta v.jpg" alt="3">
+                            </div>
+                        </a>
+                        <a href="https://www.dota2.com/home">
+                            <div class="client-item">
+                                <img src="assets/images/dota2.jpg" alt="4">
+                            </div>
+                        </a>
+                        <a href="https://www.ea.com/games/apex-legends/play-now-for-free">
+                            <div class="client-item">
+                                <img src="assets/images/apex legends.jpg" alt="5">
 
-                        <div class="client-item">
-                            <img src="assets/images/dota2.jpg" alt="4">
-                        </div>
-
-                        <div class="client-item">
-                            <img src="assets/images/apex legends.jpg" alt="5">
-                        </div>
-
-                        <div class="client-item">
-                            <img src="assets/images/warzone.jpg" alt="6">
-                        </div>
+                            </div>
+                        </a>
+                        <a href="https://www.callofduty.com/warzone">
+                            <div class="client-item">
+                                <img src="assets/images/warzone.jpg" alt="6">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -296,14 +294,14 @@ https://templatemo.com/tm-546-sixteen-clothing
 
 
     <script language="text/Javascript">
-    cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-    function clearField(t) { //declaring the array outside of the
-        if (!cleared[t.id]) { // function makes it static and global
-            cleared[t.id] = 1; // you could use true and false, but that's more typing
-            t.value = ''; // with more chance of typos
-            t.style.color = '#fff';
+        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+        function clearField(t) { //declaring the array outside of the
+            if (!cleared[t.id]) { // function makes it static and global
+                cleared[t.id] = 1; // you could use true and false, but that's more typing
+                t.value = ''; // with more chance of typos
+                t.style.color = '#fff';
+            }
         }
-    }
     </script>
 
 

@@ -80,11 +80,59 @@ https://templatemo.com/tm-546-sixteen-clothing
                             <li class="nav-item">
                                 <a class="nav-link" href="Admin.php">Admin</a>
                             </li>
-                        <?php endif; ?>
+                        <?php endif; 
+                        
+                        
+                        ?>
                     </ul>
+                    
                 </div>
             </div>
         </nav>
+        <br>
+        <center>
+        <?php
+              
+
+            $sql = "SELECT * FROM sagaming;";
+            echo '<table border="1" cellspacing="3"  cellpadding="2"> 
+    <tr> 
+        <td> <font face="Arial">User ID</font> </td> 
+        <td> <font face="Arial">User Name</font> </td> 
+        <td> <font face="Arial">User Email</font> </td> 
+        <td> <font face="Arial">User Password</font> </td> 
+        <td> <font face="Arial">User Date</font> </td> 
+        <td> <font face="Arial">User LEVEL</font> </td> 
+    </tr>';
+
+            $result = mysqli_query($con, $sql);
+            $resultCheck = mysqli_num_rows($result);
+            if ($resultCheck > 0) {
+
+
+                while ($row = mysqli_fetch_assoc($result)) {
+
+
+
+                    $fieldname1 = $row['user_id'];
+                    $fieldname2 = $row['user_name'];
+                    $fieldname3 = $row['email'];
+                    $fieldname4 = $row['password'];
+                    $fieldname5 = $row['date'];
+                    $fieldname6 = $row['user_level'];
+           
+                    echo '<tr> 
+                  <td>' . $fieldname1 . '</td> 
+                  <td>' . $fieldname2 . '</td> 
+                  <td>' . $fieldname3 . '</td> 
+                  <td>' . $fieldname4 . '</td> 
+                  <td>' . $fieldname5 . '</td> 
+                  <td>' . $fieldname6 . '</td> 
+              </tr>';
+                }
+            }
+            ?>
+            </center>
     </header>
     </body>
 
